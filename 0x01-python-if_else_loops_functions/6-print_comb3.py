@@ -5,5 +5,5 @@ for ones in range(0, 10):
         if ones < tens:
             if ones < 8:
                 print('{}'.format(ones, tens), end=', ')
-            else;
+            else:
             print('{}{}'.format(ones, tens))
