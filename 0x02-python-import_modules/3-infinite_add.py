@@ -2,9 +2,7 @@
 
 if __name__ == "__main__":
     from sys import argv
-
-num1 = 0
-length = len(argv)
-for i in range(1, length):
-    num1 += int(argv[i])
-print('{}'.format(num1)
+    sum = 0
+    for count in range(1, len(argv)):
+        sum += int(argv[count])
+        print("{}".format(sum))
