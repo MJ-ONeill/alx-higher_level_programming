@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 #include <python.h>
 #include <object.h>
 #include <listobject.h>
