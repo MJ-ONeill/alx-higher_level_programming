@@ -43,10 +43,10 @@ def matrix_mul(m_a, m_b):
         raise ValueError("m_b can't be empty")
 
     if not all((isinstance(element, int) or isinstance(element, float))
-            for element in [number for row in m_a for number in row]):
+                for element in [number for row in m_a for number in row]):
         raise TypeError("m_a should contain only integers or floats")
     if not all((isinstance(element,  int) or isinstance(element, float))
-            for element in [number for row in m_b for number in row]):
+                for element in [number for row in m_b for number in row]):
         raise TypeError("m_b should contain only integers or floats")
 
     if not all(len(row) == len(m_a[0]) for row in m_a):
@@ -56,7 +56,7 @@ def matrix_mul(m_a, m_b):
 
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
-    
+        
     matrix1 = []
     for i in range(len(m_b[0])):
         my_row = []
@@ -73,5 +73,5 @@ def matrix_mul(m_a, m_b):
                 product += row[m] * column[m]
             my_row.append(product)
         matrix2.append(my_row)
-    
-    return matrix2
+
+     return matrix2
