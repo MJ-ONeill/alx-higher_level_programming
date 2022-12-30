@@ -34,4 +34,16 @@ The original matrix is left unchanged.
 
 ::
 
-	
+	>>> print(matrix)
+	[[1, 2, 3], [4, 5, 6]]
+
+The fuction can also handle floating-point numbers.
+
+::
+
+	>>> matrix = [
+	...	[1.1, -2.2, 3.3],
+	...	[4.4, 5.5, -6.6]
+	... ]
+	>>> print(matrix_divided(matrix, 3))
+	[[0.37, -0.73, 1.1], [1.47, 1.83, -2.2]]
